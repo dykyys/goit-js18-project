@@ -61,7 +61,7 @@ const getIconData = data => {
   const iconInfo = {};
   if (getTimeObj) {
     const weather = getTimeObj.weather[0];
-    const icon = 'http://openweathermap.org/img/wn/' + weather.icon + '.png';
+    const icon = 'https://openweathermap.org/img/wn/' + weather.icon + '.png';
     iconInfo.icon = icon;
     iconInfo.iconDescription = weather.description;
     return iconInfo;
@@ -72,7 +72,7 @@ const getIconData = data => {
     } else {
       weather = data[0].weather[0];
     }
-    const icon = 'http://openweathermap.org/img/wn/' + weather.icon + '.png';
+    const icon = 'https://openweathermap.org/img/wn/' + weather.icon + '.png';
     iconInfo.icon = icon;
     iconInfo.iconDescription = weather.description;
     return iconInfo;
@@ -118,7 +118,7 @@ const dataProcessingOneDay = response => {
   oneDayData.tempMax = conToCel(main.temp_max);
   oneDayData.sunrise = new Date(sys.sunrise * 1000);
   oneDayData.sunset = new Date(sys.sunset * 1000);
-  oneDayData.icon = 'http://openweathermap.org/img/wn/' + weather.icon + '.png';
+  oneDayData.icon = 'https://openweathermap.org/img/wn/' + weather.icon + '.png';
   oneDayData.iconDescription = weather.description;
   oneDayData.timezone = response.timezone;
   return oneDayData;
@@ -163,7 +163,7 @@ const dataProcessingMoreInfo = () => {
       humidity: e.main.humidity,
       pressure: e.main.pressure,
       speed: Number(e.wind.speed.toFixed(1)),
-      icon: 'http://openweathermap.org/img/wn/' + e.weather[0].icon + '.png',
+      icon: 'https://openweathermap.org/img/wn/' + e.weather[0].icon + '.png',
       iconDescription: e.weather[0].description,
     })),
   }));

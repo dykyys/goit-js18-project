@@ -8,7 +8,7 @@ const renderFiveDaysWeather = data => {
   fiveDayData = data;
   if (document.querySelector('.js-today__tempr-container')) {
     document.querySelector('.js-today__tempr-container').remove();
-    refs.today.classList.add('isHiden');
+    refs.today.classList.add('isHiden',);
     refs.fiveDaysContainer.classList.remove('isHiden');
     refs.part2City.textContent =
       fiveDayData.city.name + ', ' + fiveDayData.city.country;
@@ -23,9 +23,6 @@ const renderFiveDaysWeather = data => {
 };
 
 // Слушаем кнопки 5 Days
-refs.btnFiveDays[0].addEventListener('click', () =>
-  api.getFiveDayData().then(data => renderFiveDaysWeather(data)),
+refs.btnFiveDays[0].addEventListener('click', () => api.getFiveDayData().then(data => renderFiveDaysWeather(data))
 );
-refs.btnFiveDays[1].addEventListener('click', () =>
-  api.getFiveDayData().then(data => renderFiveDaysWeather(data)),
-);
+

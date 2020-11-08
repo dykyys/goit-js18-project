@@ -57,11 +57,7 @@ refs.locationFormInput.addEventListener('submit', function (e) {
 });
 
 // Слушаем кнопки Today
-refs.btnOneDay[0].addEventListener('click', () =>
-  oneDayDatarenderOneDayWeather(oneDayData),
-);
-refs.btnOneDay[1].addEventListener('click', () =>
-  renderOneDayWeather(oneDayData),
+refs.btnOneDay[1].addEventListener('click', () => renderOneDayWeather(oneDayData)
 );
 
 // запуск странницы без данных
