@@ -1,0 +1,9 @@
+.hourlyWeather__aside-wind {
+  &::before {
+    content: url('./img/icons/wind.png');
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+}

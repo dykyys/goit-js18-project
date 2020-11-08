@@ -1,0 +1,14 @@
+.quote__text {
+  width: 205px;
+  margin-bottom: 14px;
+  font-style: italic;
+
+  @media (min-width: 768px) {
+    width: 375px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 22px;
+  }
+}

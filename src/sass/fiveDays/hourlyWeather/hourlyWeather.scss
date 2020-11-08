@@ -1,0 +1,20 @@
+.hourlyWeather {
+  margin: 0 5px;
+  list-style: none;
+  min-width: 120px;
+  height: 220px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff8a;
+  border: 1px solid #ffffff8a;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+  }
+}

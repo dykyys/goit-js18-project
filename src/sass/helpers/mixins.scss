@@ -1,0 +1,15 @@
+@mixin date-after() {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #e7e8eb;
+  margin-left: 10px;
+}
+
+@mixin sunrize-sunset() {
+  display: flex;
+  width: 75px;
+  justify-content: space-between;
+  align-items: flex-end;
+}

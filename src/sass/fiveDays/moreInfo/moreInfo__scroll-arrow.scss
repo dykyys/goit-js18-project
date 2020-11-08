@@ -1,0 +1,13 @@
+.moreInfo__scroll-arrow {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  transition: opacity 200ms linear;
+  outline: none;
+  img {
+    margin: 0 auto;
+  }
+}

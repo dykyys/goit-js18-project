@@ -1,0 +1,16 @@
+.chart__btn {
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: rgba(247, 247, 247, 0.2);
+  text-align: center;
+
+  &:hover {
+    background-color: rgba(247, 247, 247, 0.3);
+    transition: 200ms linear;
+    cursor: pointer;
+  }
+}

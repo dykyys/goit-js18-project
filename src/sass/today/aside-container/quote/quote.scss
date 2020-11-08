@@ -1,0 +1,32 @@
+.quote {
+  position: relative;
+  text-align: -webkit-right;
+  font-family: $main-font;
+  color: $main-white-color;
+  padding-top: 60px;
+
+  &:before {
+    position: absolute;
+    content: '\201D';
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 90px;
+    top: 32px;
+    right: -4px;
+    opacity: 0.4;
+  }
+
+  @media (min-width: 768px) {
+    width: 455px;
+    margin: 0 auto;
+    &:before {
+      font-size: 130px;
+      top: 0px;
+      right: -8px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.slider__item-city {
+  cursor: pointer;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 12px;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $main-white-color;
+    margin-bottom: 1px;
+  }
+}

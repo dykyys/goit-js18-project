@@ -1,0 +1,13 @@
+.moreInfo {
+  font-family: $main-font;
+  opacity: 0.8;
+  @media screen and (min-width: 320px) {
+    padding: 0 10px 35px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 30px 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 0 35px;
+  }
+}

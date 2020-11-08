@@ -1,0 +1,39 @@
+.today__btn {
+  padding: 6px 36px;
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: 700;
+  border-radius: 14px;
+  background-color: rgba(247, 247, 247, 0.59);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+
+  &:hover {
+    transition: 200ms linear;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+  }
+}
+
+.today__btn-oneDay {
+  background-color: #f7f7f7;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 16px;
+  }
+}
+
+.today__btn-fiveDay {
+  background-color: #f7f7f7;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 16px;
+  }
+}

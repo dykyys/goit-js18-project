@@ -1,0 +1,22 @@
+.moreInfo__list {
+  display: flex;
+  @media screen and (min-width: 320px) {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    &::-webkit-scrollbar {
+      height: 3px;
+      bottom: $focus-color;
+      background-color: #ffffff8a;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $focus-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,10 @@
+.today__container {
+  text-align: center;
+  width: 280px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 490px;
+  }
+}

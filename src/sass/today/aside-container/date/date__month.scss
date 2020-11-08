@@ -1,0 +1,44 @@
+.date__month {
+  width: 130px;
+  text-align: right;
+  margin-right: 10px;
+
+  &::after {
+    @include date-after();
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+
+    &::after {
+      margin-left: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: auto;
+    text-align: left;
+  }
+}
+
+.date__month-time {
+  font-size: 14px;
+  display: flex;
+  height: 24px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    height: 22px;
+    width: auto;
+    margin: 0;
+    justify-content: left;
+    align-items: flex-end;
+  }
+}

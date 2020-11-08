@@ -1,0 +1,86 @@
+@import './sass/normalize.scss';
+@import './sass/base.scss';
+@import './sass/body.scss';
+@import './sass/fonts.scss';
+@import './sass/variables.scss';
+@import './sass/helpers/placeholders.scss';
+@import './sass/helpers/mixins.scss';
+
+@import './sass/wrapper.scss';
+@import './sass/container.scss';
+
+@import './sass/location/location.scss';
+@import './sass/location/form/location__form.scss';
+@import './sass/location/form/location__form-input.scss';
+@import './sass/location/form/location__form-btn.scss';
+
+@import './sass/location/slider/slider.scss';
+@import './sass/location/slider/slider__btn.scss';
+@import './sass/location/slider/slider__list.scss';
+@import './sass/location/slider/slider__item.scss';
+@import './sass/location/slider/slider__item-container.scss';
+@import './sass/location/slider/slider__item-city.scss';
+@import './sass/location/slider/slider__item-del-btn.scss';
+
+@import './sass/today/today__wrapper.scss';
+@import './sass/today/today__container.scss';
+@import './sass/today/btn/today__btn.scss';
+@import './sass/today/btn/list__btn.scss';
+@import './sass/today/tempr/today__tempr-container.scss';
+@import './sass/today/tempr/tempr__icon.scss';
+@import './sass/today/tempr/tempr__inCiti.scss';
+@import './sass/today/tempr/tempr__degrees-container.scss';
+@import './sass/today/tempr/tempr__degrees';
+@import './sass/today/tempr/degrees__list.scss';
+
+@import './sass/today/aside-container/aside-container.scss';
+@import './sass/today/aside-container/date/date.scss';
+@import './sass/today/aside-container/date/date__day.scss';
+@import './sass/today/aside-container/date/date__month.scss';
+@import './sass/today/aside-container/date/date__time.scss';
+@import './sass/today/aside-container/date/date__sun.scss';
+
+@import './sass/today/aside-container/quote/quote.scss';
+@import './sass/today/aside-container/quote/quote__text.scss';
+@import './sass/today/aside-container/quote/quote__author.scss';
+
+@import './sass/fiveDays/fiveDays__btn.scss';
+@import './sass/fiveDays/fiveDays__wrapper.scss';
+@import './sass/fiveDays/fiveDays__container.scss';
+@import './sass/fiveDays/fiveDays__mobile-city.scss';
+@import './sass/fiveDays/fiveDays__tab-desct-city.scss';
+@import './sass/fiveDays/fiveDays__scroll.scss';
+@import './sass/fiveDays/fiveDays__arrow.scss';
+
+@import './sass/fiveDays/fiveDays__list/fiveDays__list.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__item.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__weekDay.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__day.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__icon.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__tempr.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__tempr-min-max.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__tempr-descr.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__tempr-value.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__tempr-line.scss';
+@import './sass/fiveDays/fiveDays__list/fiveDays__more-btn.scss';
+
+@import './sass/fiveDays/hourlyWeather/hourlyWeather.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__time.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__temp.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__aside.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__aside-pressure.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__aside-humidity.scss';
+@import './sass/fiveDays/hourlyWeather/hourlyWeather__aside-wind.scss';
+
+@import './sass/fiveDays/moreInfo/moreInfo.scss';
+@import './sass/fiveDays/moreInfo/moreInfo__list.scss';
+@import './sass/fiveDays/moreInfo/moreInfo__scroll.scss';
+@import './sass/fiveDays/moreInfo/moreInfo__scroll-arrow.scss';
+
+@import './sass/fiveDays/chart/chowChart';
+@import './sass/fiveDays/chart/chart__container.scss';
+@import './sass/fiveDays/chart/chart__header.scss';
+@import './sass/fiveDays/chart/chart__btn.scss';
+@import './sass/fiveDays/chart/chart__btn-icon.scss';
+@import './sass/fiveDays/chart/hideChart.scss';
+@import './sass/fiveDays/chart/chart__avarage.scss';

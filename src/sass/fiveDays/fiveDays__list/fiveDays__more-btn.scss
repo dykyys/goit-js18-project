@@ -1,0 +1,26 @@
+.fiveDays__more-btn {
+  display: block;
+  font-size: 12px;
+  font-family: 'Lato';
+  color: rgba(255, 255, 255, 0.302);
+  text-decoration: underline;
+  text-align: center;
+  border: none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+}

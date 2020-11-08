@@ -1,0 +1,7 @@
+.tempr__degrees-container {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+}

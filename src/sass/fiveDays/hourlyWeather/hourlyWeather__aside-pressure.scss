@@ -1,0 +1,10 @@
+.hourlyWeather__aside-pressure {
+  margin-bottom: 5px;
+  &::before {
+    content: url('./img/icons/pressure.png');
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+}

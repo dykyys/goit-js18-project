@@ -1,0 +1,10 @@
+.fiveDays__icon {
+  margin: 0 auto;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+
+  @media (min-width: 1280px) {
+    margin: 0 auto 15px;
+  }
+}

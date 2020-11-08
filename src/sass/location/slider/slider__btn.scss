@@ -1,0 +1,32 @@
+.slider__btn {
+  @extend %button;
+  opacity: 0.471;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 200ms linear;
+  outline: none;
+  position: absolute;
+
+  &:hover,
+  &:hover svg {
+    opacity: 1;
+  }
+
+  & svg {
+    fill: #000000;
+    transition: opacity 200ms linear;
+    width: 80%;
+    height: 80%;
+  }
+}
+.slider__Prev-btn {
+  left: 0;
+}
+
+.slider__Next-btn {
+  right: 0;
+}

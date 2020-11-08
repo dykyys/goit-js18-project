@@ -1,0 +1,13 @@
+.slider__item {
+  border-radius: 12px;
+  background-color: rgb(16, 33, 54);
+  opacity: 0.471;
+  padding: 5px 5px 5px 10px;
+  transition: opacity 200ms linear;
+  width: auto;
+  // margin-right: 10px;
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

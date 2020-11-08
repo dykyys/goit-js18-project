@@ -1,0 +1,16 @@
+.slider__list {
+  @extend %list;
+  width: 178px;
+  height: 27px;
+  svg {
+    display: block;
+    height: 100%;
+    width: 12px;
+    fill: $main-white-color;
+  }
+
+  @media (min-width: 768px) {
+    width: 380px;
+    justify-content: space-evenly;
+  }
+}

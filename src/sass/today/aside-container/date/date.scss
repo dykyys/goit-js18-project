@@ -1,0 +1,33 @@
+.date {
+  width: 280px;
+  height: 190px;
+  border-radius: 35px;
+  background-color: rgba(16, 33, 54, 0.59);
+  margin: 0 auto;
+  color: $main-white-color;
+  font-family: $main-font;
+  font-weight: 400;
+  padding-top: 26px;
+
+  &:hover {
+    transition: 200ms linear;
+    background-color: #102136;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 490px;
+    height: 277px;
+    padding-top: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 601px;
+    height: 277px;
+    margin: 0px;
+    padding: 50px 63px 96px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

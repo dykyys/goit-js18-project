@@ -1,0 +1,40 @@
+.degrees__list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  width: 50%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-evenly;
+  }
+}
+
+.degrees__item {
+  color: rgb(255, 255, 255);
+}
+.degrees__item-line {
+  width: 1px;
+  height: 32px;
+  background-color: rgb(88, 100, 115);
+  @media screen and (min-width: 768px) {
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.degrees__item-deskr {
+  color: rgb(88, 100, 115);
+  font-size: 14px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+.degrees__item-deg {
+  font-size: 18px;
+}

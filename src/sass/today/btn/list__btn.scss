@@ -1,0 +1,9 @@
+.list__btn {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}

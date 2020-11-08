@@ -1,0 +1,17 @@
+.fiveDays__tempr {
+  display: flex;
+  justify-content: space-between;
+  width: 55px;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 75px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 105px;
+    margin-bottom: 17px;
+    height: 55px;
+  }
+}

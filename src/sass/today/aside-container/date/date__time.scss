@@ -1,0 +1,12 @@
+.date__time {
+  width: 130px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 85px;
+  }
+}

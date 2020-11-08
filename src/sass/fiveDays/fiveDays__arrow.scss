@@ -1,0 +1,11 @@
+.fiveDays__arrow {
+  width: 6px;
+  height: 10px;
+  display: inline-block;
+  opacity: 0.541;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}

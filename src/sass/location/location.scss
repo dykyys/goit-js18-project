@@ -1,0 +1,8 @@
+.location {
+  margin: 0 auto 50px;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    width: 505px;
+  }
+}

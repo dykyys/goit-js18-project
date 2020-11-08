@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>OpenWeatherMap API</title>
+  </head>
+
+  <body>
+    <div class="wrapper js-wrapper">
+      <div class="container">
+        <section class="location">
+          <form class="location__form js-location__form">
+            <input
+              type="text"
+              name="query"
+              placeholder="Enter the city"
+              class="location__form-input js-location__form-input"
+            />
+            <button
+              type="button"
+              class="location__form-btn js-location__form-btn"
+            >
+              <svg viewBox="0 0 32 32">
+                <path
+                  d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+          <div class="slider">
+            <button
+              class="slider__btn slider__Prev-btn js-slider__Prev-btn"
+            >
+              <svg aria-hidden="true" viewBox="0 -3 32 32">
+                <path
+                  d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"
+                ></path>
+              </svg>
+            </button>
+            <ul class="slider__list js-slider__list"></ul>
+            <button
+              class="slider__btn slider__Next-btn js-slider__Next-btn"
+            >
+              <svg
+                aria-hidden="false"
+                viewBox="0 -3 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="js-today">
+          <div class="today__wrapper">
+            <div class="today__container js-today__container">
+              <ul class="list__btn">
+                <li>
+                  <button
+                    class="today__btn today__btn-oneDay js-today__btn-oneDay"
+                  >
+                    today
+                  </button>
+                </li>
+                <li>
+                  <button class="today__btn js-today__btn-fiveDay">5 days</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="data-quote-container aside-container">
+            <div class="date-container date">
+              <div class="date__day"></div>
+              <div class="date__month-time">
+                <p class="date__month"></p>
+                <p class="date__time"></p>
+              </div>
+              <div class="date__sun">
+                <div class="date__sunrise">
+                  <img
+                    class="date__sunrise--icon"
+                    src="./img/sunrise.png"
+                    alt=""
+                  />
+                  <p class="date__sunrise--time"></p>
+                </div>
+                <div class="date__sunset">
+                  <img
+                    class="date__sunset--icon"
+                    src="./img/sunset.png"
+                    alt=""
+                  />
+                  <p class="date__sunset--time"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quote">
+              <p class="quote__text">
+                Who cares about the clouds when we're together? Just sing a song
+                and bring the sunny weather.
+              </p>
+              <p class="quote__author">Dale Evans</p>
+            </div>
+          </div>
+        </section>
+       
+        <section class=" js-fiveDays isHiden">
+          <div class="fiveDays__btn">
+              <ul class="list__btn">
+                <li>
+                  <button class=" today__btn js-today__btn-oneDay">today</button>
+                </li>
+                <li>
+                  <button
+                    class="today__btn today__btn-fiveDay js-today__btn-fiveDay"
+                  >
+                    5 days
+                  </button>
+                </li>
+              </ul>
+            <h2 class="js-fiveDays__tab-desct-city fiveDays__tab-desct-city">Kyiv, UA</h2>
+          </div>
+
+          <div class="fiveDays__wrapper">
+            <section class=" fiveDays__container">
+              <h2 class="fiveDays__mobile-city js-fiveDays__mobile-city">Kyiv, UA</h2>
+
+              <ul class="fiveDays__list js-fiveDays__list"></ul>
+
+              <div class="five-days-containeer__scroll fiveDays__scroll">
+                <img
+                  id="left-arrow"
+                  src="./img/icons/left-arrow.png"
+                  alt="left-arrow"
+                  class="five-days-containeer__arrow five-days-containeer__arrow--hover fiveDays__arrow"
+                />
+                <img
+                  id="right-arrow"
+                  src="./img/icons/right-arrow.png"
+                  alt="right-arrow"
+                  class="five-days-containeer__arrow five-days-containeer__arrow--hover fiveDays__arrow"
+                />
+              </div>
+            </section>
+
+            <div class="moreInfo isHiden">
+              <ul class="moreInfo__list js-moreInfo__list"></ul>
+              <div class="moreInfo__scroll">
+                <button
+                  id="moreInfo-left-btn"
+                  class="moreInfo__scroll-arrow isOpacity"
+                >
+                  <img
+                    id="left-arrow"
+                    src="./img/icons/left-arrow.png"
+                    alt="left-arrow"
+                  />
+                </button>
+                <button id="moreInfo-right-btn" class="moreInfo__scroll-arrow ">
+                  <img
+                    id="right-arrow"
+                    src="./img/icons/right-arrow.png"
+                    alt="right-arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <section class="container">
+            <div class="show-chart-box showChart js-showChart">
+              <div class="header-list chart__container">
+                <h3 class="chart__header js-chart__header-show">Show chart</h3>
+                
+                  <button class=" chart__btn js-showChart__btn">
+                    <svg viewBox="0 0 24 24" class="chart-icon chart__btn-icon">
+                      <path
+                        d="M7.406 8.578l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z"
+                      ></path>
+                    </svg>
+                  </button>
+                
+              </div>
+            </div>
+            <div class="chart-box hideChart js-hideChart">
+              <div class="header-list chart__container">
+                <h3 class="chart__header js-chart__header-hide">Hide chart</h3>
+                
+                  <button class="chart__btn js-hideChart__btn">
+                    <svg viewBox="0 0 24 24" class="chart-icon hide-chart-icon chart__btn-icon">
+                      <path
+                        d="M7.406 15.422l-1.406-1.406 6-6 6 6-1.406 1.406-4.594-4.594z"
+                      ></path>
+                    </svg>
+                  </button>
+                
+              </div>
+
+              <div class="chart__avarage">
+                <canvas id="myChart"> </canvas>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

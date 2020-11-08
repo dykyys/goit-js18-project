@@ -1,0 +1,20 @@
+.location__form-btn {
+  fill: #000000;
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  opacity: 0.471;
+  border: none;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: fill 200ms linear;
+
+  &:focus {
+    fill: $focus-color;
+  }
+}

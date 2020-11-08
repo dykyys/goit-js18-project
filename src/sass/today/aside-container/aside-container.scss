@@ -1,0 +1,8 @@
+.aside-container {
+  @media screen and (min-width: 1280px) {
+    // align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -110px;
+  }
+}

@@ -1,0 +1,58 @@
+.date__sun {
+  font-size: 14px;
+  display: flex;
+  width: 170px;
+  height: 40px;
+  margin: 5px auto 0px;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    width: 194px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 22px;
+    margin: 0px;
+  }
+}
+
+.date__sunrise--time {
+  &::after {
+    @include date-after();
+  }
+
+  @media screen and (min-width: 768px) {
+    &::after {
+      margin-left: 15px;
+    }
+  }
+}
+
+.date__sunrise {
+  @include sunrize-sunset();
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    width: 85px;
+  }
+}
+
+.date__sunset {
+  @include sunrize-sunset();
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 85px;
+    margin-left: 15px;
+  }
+}
+
+.date__sunrise--icon,
+.date__sunset--icon {
+  width: 26px;
+  height: 34px;
+}

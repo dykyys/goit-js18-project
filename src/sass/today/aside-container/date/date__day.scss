@@ -1,0 +1,29 @@
+.date__day {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 1px;
+
+  color: #f7f7f7;
+  font-weight: 300;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 90px;
+    margin-bottom: 0px;
+  }
+}
+
+.date__day--nth {
+  font-size: 14px;
+  vertical-align: super;
+
+  @media screen and (min-width: 768px) {
+    font-size: 23px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+    width: 430px;
+    margin: 0px;
+  }
+}

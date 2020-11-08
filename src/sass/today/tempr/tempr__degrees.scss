@@ -1,0 +1,9 @@
+.tempr__degrees {
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  // justify-content: center;
+  @media screen and (min-width: 768px) {
+    font-size: 90px;
+    font-weight: 300;
+  }
+}

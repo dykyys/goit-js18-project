@@ -1,0 +1,32 @@
+{{#each list}}
+<li class="fiveDays__item js-fiveDays__item">
+    <h3 class="fiveDays__weekDay">
+        {{Day}}
+    </h3>
+    <h4 class="fiveDays__day">{{DayNum}} {{Month}}</h4>
+    <img src="{{icon.icon}}" alt="{{icon.iconDescription}}" class="fiveDays__icon">
+    <div class="fiveDays__tempr">
+
+        <div class="fiveDays__tempr-min-max">
+            <p class="fiveDays__tempr-descr">
+                min
+            </p>
+            <p class="fiveDays__tempr-value">{{temp.TempMin}}</p>
+        </div>
+
+        <i class="fiveDays__tempr-line"></i>
+
+
+        <div class="fiveDays__tempr-min-max">
+            <p class="fiveDays__tempr-descr">
+                max
+            </p>
+            <p class="fiveDays__tempr-value">{{temp.TempMax}}</p>
+        </div>
+
+    </div>
+    <button class="fiveDays__more-btn" type="button" data-day="{{DayNum}}">
+        more info
+    </button>
+</li>
+{{/each}}

@@ -1,0 +1,18 @@
+.chart__header {
+  margin-bottom: 8px;
+  padding-right: 14px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(255, 107, 8);
+  text-transform: capitalize;
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 200ms linear;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+  }
+}

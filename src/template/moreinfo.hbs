@@ -1,0 +1,14 @@
+{{#each this}}
+<li class="hourlyWeather">
+    <p class="hourlyWeather__time">{{time}}</p>
+    <p class="hourlyWeather__temp">
+        <img src="{{icon}}" alt="{{iconDescription}}" class="hourlyWeather__temp-icon">
+        <span>{{temp}} &#176;</span>
+    </p>
+    <ul class="hourlyWeather__aside">
+        <li class="hourlyWeather__aside-pressure">{{pressure}} mm</li>
+        <li class="hourlyWeather__aside-humidity">{{humidity}}%</li>
+        <li class="hourlyWeather__aside-wind">{{speed}} m/s</li>
+    </ul>
+</li>
+{{/each}}

@@ -1,0 +1,11 @@
+.hourlyWeather__aside-humidity {
+  margin-bottom: 5px;
+  &::before {
+    content: url('./img/icons/humidity.png');
+    width: auto;
+    height: auto;
+    padding-right: 16px;
+    padding-left: 7px;
+    vertical-align: middle;
+  }
+}
