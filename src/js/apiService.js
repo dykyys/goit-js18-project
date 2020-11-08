@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {openWeatherMapKey} from '../keys'
 
 // Переменные для обработки погоды
 let location = '';
@@ -9,11 +10,10 @@ let moreInfoData = {};
 
 // Переменные для api
 const OWM = 'https://api.openweathermap.org/data/2.5/';
-const apiKey = '5c8dab899c73e9fec8517804e94f0209';
 
 // Получаем правильную ссылку
 const GetOWM_Request = RequestType =>
-  OWM + RequestType + '?q=' + location + '&appid=' + apiKey;
+  OWM + RequestType + '?q=' + location + '&appid=' + openWeatherMapKey;
 
 // Делаем запрос на сервер и получаем данные
 const getWeatherData = async url => axios.get(url);

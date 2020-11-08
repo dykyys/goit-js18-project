@@ -1,11 +1,10 @@
 import axios from 'axios';
-
+import {pixabayKey} from '../../keys'
 export default {
   searchQuery: 'kiev',
-  apiKey: '16190641-6f6d4120eafc733567c1d4bc7',
 
   makeQuery() {
-    const url = `https://pixabay.com/api/?image_type=backgrounds&orientation=horizontal&q=${this.query}&per_page=5&key=${this.apiKey}`;
+    const url = `https://pixabay.com/api/?image_type=backgrounds&orientation=horizontal&q=${this.query}&per_page=5&key=${pixabayKey}`;
 
     return axios.get(url).then(({ data: { hits } }) => {
       return hits;
