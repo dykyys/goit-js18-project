@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {openWeatherMapKey} from '../keys'
+import {openWeatherMapKey} from '../../keys'
 
 // Переменные для обработки погоды
 let location = '';

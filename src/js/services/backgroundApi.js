@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {pixabayKey} from '../../keys'
+import {pixabayKey} from '../../../keys'
 export default {
   searchQuery: 'kiev',
 
