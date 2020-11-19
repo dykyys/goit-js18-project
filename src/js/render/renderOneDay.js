@@ -49,7 +49,7 @@ const renderSunTime = (sunrise, sunset) => {
 };
 
 // Слушаем submit поля поиска погоды
-refs.locationFormInput.addEventListener('submit', function (e) {
+refs.locationForm.addEventListener('submit', function (e) {
   e.preventDefault();
   const formData = new FormData(this);
   const location = formData.get('query');

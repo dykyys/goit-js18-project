@@ -5,8 +5,8 @@ const locationFormBtn = document.querySelector(
 );
 const locationFormInput = document.querySelector('.js-location__form-input');
 const sliderList = document.querySelector('.js-slider__list');
-const btnPrev = document.querySelector('.js-slider__Prev-btn');
-const btnNext = document.querySelector('.js-slider__Next-btn');
+const sliderPrevBtn = document.querySelector('.js-slider__Prev-btn');
+const sliderNextBtn = document.querySelector('.js-slider__Next-btn');
 
 const today = document.querySelector('.js-today');
 const todayContainer = document.querySelector('.js-today__container');
@@ -48,8 +48,8 @@ export default {
   locationFormBtn,
   locationFormInput,
   sliderList,
-  btnPrev,
-  btnNext,
+  sliderPrevBtn,
+  sliderNextBtn,
   today,
   todayContainer,
   btnShowChart,

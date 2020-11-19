@@ -10,11 +10,12 @@ const storage = {
   favoriteCities: [],
 };
 
-refs.locationFormInput.addEventListener('input', function () {
-  if (this.value) {
-    return (this.value = this.value[0].toUpperCase() + this.value.slice(1));
-  }
-});
+// refs.locationFormInput.addEventListener('input', function () {
+//   if (this.value) {
+//     console.log(this.value);
+//     return (this.value = this.value[0].toUpperCase() + this.value.slice(1));
+//   }
+// });
 createButtons(getLocalStorage());
 
 refs.locationFormBtn.addEventListener('click', () => {
@@ -22,13 +23,13 @@ refs.locationFormBtn.addEventListener('click', () => {
 
   if (widthOfUserScreen < 768) {
     if (storage.favoriteCities.length > 2) {
-      refs.btnNext.hidden = false;
+      refs.sliderNextBtn.hidden = false;
     }
   }
 
   if (widthOfUserScreen > 768) {
     if (storage.favoriteCities.length > 4) {
-      refs.btnNext.hidden = false;
+      refs.sliderNextBtn.hidden = false;
     }
   }
 });
@@ -46,14 +47,14 @@ refs.sliderList.addEventListener('click', event => {
 
     if (widthOfUserScreen < 768) {
       if (storage.favoriteCities.length <= 2) {
-        refs.btnNext.hidden = true;
-        refs.btnPrev.hidden = true;
+        refs.sliderNextBtn.hidden = true;
+        refs.sliderPrevBtn.hidden = true;
       }
     }
 
     if (widthOfUserScreen > 768) {
       if (storage.favoriteCities.length <= 4) {
-        refs.btnNext.hidden = true;
+        refs.sliderNextBtn.hidden = true;
       }
     }
   }
@@ -82,24 +83,24 @@ const mySiema = new Siema({
   loop: false,
 });
 
-refs.btnPrev.addEventListener('click', () => {
+refs.sliderPrevBtn.addEventListener('click', () => {
   mySiema.prev();
   if (mySiema.currentSlide === 0) {
-    refs.btnPrev.hidden = true;
+    refs.sliderPrevBtn.hidden = true;
     
   }
 });
 
-refs.btnNext.addEventListener('click', () => {
+refs.sliderNextBtn.addEventListener('click', () => {
   mySiema.next();
   if (mySiema.currentSlide > 0) {
-    refs.btnPrev.hidden = false;
+    refs.sliderPrevBtn.hidden = false;
   }
 
 });
 
 if (mySiema.currentSlide === 0) {
-  refs.btnPrev.hidden = true;
+  refs.sliderPrevBtn.hidden = true;
 }
 
 
@@ -107,13 +108,13 @@ const widthOfUserScreen = window.innerWidth;
 
 if (widthOfUserScreen < 768) {
   if (storage.favoriteCities.length <= 2) {
-    refs.btnNext.hidden = true;
+    refs.sliderNextBtn.hidden = true;
   }
 }
 
 if (widthOfUserScreen > 768) {
   if (storage.favoriteCities.length <= 4) {
-    refs.btnNext.hidden = true;
+    refs.sliderNextBtn.hidden = true;
   }
 }
 
