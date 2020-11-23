@@ -13,8 +13,7 @@
   cursor: pointer;
   padding: 0;
   transition: fill 200ms linear;
-
-  &:focus {
-    fill: $focus-color;
-  }
+}
+.location__form-btn-focus {
+  fill: $focus-color;
 }

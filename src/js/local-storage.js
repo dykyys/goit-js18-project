@@ -10,12 +10,15 @@ const storage = {
   favoriteCities: [],
 };
 
-// refs.locationFormInput.addEventListener('input', function () {
-//   if (this.value) {
-//     console.log(this.value);
-//     return (this.value = this.value[0].toUpperCase() + this.value.slice(1));
-//   }
-// });
+refs.locationFormInput.addEventListener('input',  (event)=> {
+  if (storage.favoriteCities.includes(event.target.value)) {
+    addFocus()
+    return
+  }
+  clearFocus()
+    
+
+});
 createButtons(getLocalStorage());
 
 refs.locationFormBtn.addEventListener('click', () => {
@@ -58,7 +61,7 @@ refs.sliderList.addEventListener('click', event => {
       }
     }
   }
-
+  
   if (event.target.nodeName === 'P') {
     const location = event.target.textContent;
     refs.locationFormInput.value = location;
@@ -118,10 +121,6 @@ if (widthOfUserScreen > 768) {
   }
 }
 
-function clearClass() {
-  refs.locationFormBtn.classList.remove('search-location__form-btn-focus');
-}
-
 function getLocalStorage() {
   const arrayOfCities = localStorage.getItem('city');
 
@@ -130,9 +129,9 @@ function getLocalStorage() {
   }
 
   const parsedCities = JSON.parse(arrayOfCities);
-  storage.favoriteCities = parsedCities;
+  return storage.favoriteCities = parsedCities;
 
-  return parsedCities;
+  // return parsedCities;
 }
 
 function createButtons(cities) {
@@ -152,13 +151,14 @@ function addToLocalStorage() {
     return;
   }
 
-  refs.locationFormBtn.classList.add('search-location__form-btn-focus');
+  addFocus()
   storage.favoriteCities.push(city);
 
   localStorage.setItem('city', JSON.stringify(storage.favoriteCities));
   // refs.locationFormInput.value = '';
+  // clearFocus()
 
-  setTimeout(clearClass, 800);
+  // setTimeout(clearClass, 800);
 
   const addNewButton = addCity(city);
   const newElement = document.createElement('div');
@@ -166,4 +166,11 @@ function addToLocalStorage() {
   newElement.innerHTML = addNewButton;
 
   mySiema.append(newElement);
+}
+
+function addFocus() {
+  refs.locationFormBtn.classList.add('location__form-btn-focus');
+}
+function clearFocus() {
+  refs.locationFormBtn.classList.remove('location__form-btn-focus');
 }
